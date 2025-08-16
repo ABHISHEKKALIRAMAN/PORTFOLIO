@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhishek Kaliraman — Architect AI</title>
+  <meta name="description" content="Founder of Architect AI. Building RS AI OS, AI agents & automations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121821; --muted:#8892a6; --text:#e6edf7; --acc:#7c5cff; --acc2:#22c55e; --border:#1f2937;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 80% -10%, #1a1f2b55, transparent 60%), var(--bg);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(11,15,20,.95), rgba(11,15,20,.6) 70%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--acc),#4cc9f0);display:grid;place-items:center;font-weight:800}
+    .navlinks{display:flex;gap:14px;flex-wrap:wrap}
+    .navlinks a{padding:10px 12px;border-radius:12px;border:1px solid transparent}
+    .navlinks a:hover{border-color:var(--border);background:#0f1622}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--acc),#4cc9f0);color:#0b0f14;padding:10px 14px;border-radius:12px;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1.3fr .9fr;gap:32px;align-items:center;padding:56px 0}
+    .hero h1{font-size:44px;line-height:1.05;margin:0 0 14px}
+    .hero p{color:var(--muted);font-size:18px;margin:0 0 22px}
+    .pill{display:inline-block;border:1px solid var(--border);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+    .card{background:linear-gradient(180deg,#121821,#0e141c);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
+
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}.hero h1{font-size:36px}}
+
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .kpi{background:#0f1622;border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center}
+    .kpi strong{font-size:22px}
+
+    h2{margin:34px 0 14px;font-size:28px}
+    .muted{color:var(--muted)}
+
+    .project{display:flex;flex-direction:column;gap:10px}
+    .badge{display:inline-block;font-size:12px;border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:var(--muted)}
+    .project .actions{display:flex;gap:10px;margin-top:6px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;border:1px solid var(--border)}
+    .btn.primary{background:#0f1622}
+    .btn:hover{border-color:#334155}
+
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:900px){.about{grid-template-columns:1fr}}
+
+    .footer{margin:36px 0 12px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:14px}
+    .socials{display:flex;gap:12px}
+
+    /* contact */
+    form{display:grid;gap:12px}
+    input, textarea{width:100%;background:#0f1622;border:1px solid var(--border);border-radius:12px;color:var(--text);padding:12px}
+    textarea{min-height:120px}
+    .success{display:none;margin-top:8px;color:var(--acc2);font-weight:600}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top"><span class="logo">AI</span> Abhishek Kaliraman</a>
+      <nav class="navlinks">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="mailto:abhishekkaliraman009@gmail.com">Hire me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div>
+        <span class="pill">Founder @ Architect AI • Building RS AI OS</span>
+        <h1>AI Agents & Automations that grow your business.</h1>
+        <p>I design and build practical AI systems — from lead scraping to voice agents — that save time and drive revenue. Available for consulting, custom workflows, and partnerships.</p>
+        <div class="grid cols-2">
+          <a class="cta" href="#projects">See projects</a>
+          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><strong>30+ </strong><div class="muted">Workflows shipped</div></div>
+          <div class="kpi"><strong>5 </strong><div class="muted">Active mini‑agents</div></div>
+          <div class="kpi"><strong>24h </strong><div class="muted">Prototype turnaround</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">What I'm building now</h3>
+        <ul class="muted" style="margin:0 0 12px; padding-left:18px">
+          <li>RS AI OS — modular agent platform</li>
+          <li>AI CRM Lead Scraper (real estate)</li>
+          <li>AI Voice Follower — calls + Whisper STT</li>
+          <li>Auto Mail Replier</li>
+        </ul>
+        <a class="btn primary" href="#contact">Get early access →</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured projects</h2>
+      <p class="muted">A few recent builds. More on request.</p>
+      <div class="grid cols-3">
+        <article class="project card">
+          <span class="badge">AI OS — Part 4</span>
+          <h3>Voice Call Automation</h3>
+          <p class="muted">Google Sheets → Twilio call → Whisper STT → auto log & follow‑up. Perfect for instant lead qualification.</p>
+          <div class="actions">
+            <a class="btn primary" href="#contact">Request demo</a>
+            <a class="btn" href="#">Case study</a>
+          </div>
+        </article>
+        <article class="project card">
+          <span class="badge">Real Estate</span>
+          <h3>AI CRM Lead Scraper</h3>
+          <p class="muted">Scrapes & enriches leads, auto‑tags by location/budget, removes duplicates, pushes to CRM.</p>
+          <div class="actions">
+            <a class="btn primary" href="#contact">Get it free</a>
+            <a class="btn" href="#">Quick video</a>
+          </div>
+        </article>
+        <article class="project card">
+          <span class="badge">Inbox</span>
+          <h3>Auto Mail Replier</h3>
+          <p class="muted">Understands context and replies with smart templates. Great for support & sales.</p>
+          <div class="actions">
+            <a class="btn primary" href="#contact">Try it</a>
+            <a class="btn" href="#">Docs</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="about">
+        <div class="card">
+          <h3 style="margin-top:0">Who I am</h3>
+          <p class="muted">Founder of <strong>Architect AI</strong>. I build agentic workflows with n8n, OpenAI, Twilio, Gmail, and CRMs. My focus is shipping fast, clean, and reliable automations.</p>
+          <p class="muted">Looking to collaborate with real estate teams, SaaS founders, and anyone exploring AI automation.</p>
+          <a class="btn" href="mailto:abhishekkaliraman009@gmail.com">Email me</a>
+        </div>
+        <div class="grid cols-2">
+          <div class="card">
+            <h4 style="margin:0 0 6px">Skills</h4>
+            <p class="muted">n8n • OpenAI • Node/JS • Twilio • Gmail API • Airtable/Supabase • Webhooks</p>
+          </div>
+          <div class="card">
+            <h4 style="margin:0 0 6px">What I offer</h4>
+            <p class="muted">Custom automations, agent templates, workflow audits, and team training.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid cols-2">
+        <form id="contactForm" class="card">
+          <label>
+            <span class="muted">Your name</span>
+            <input name="name" placeholder="John Doe" required />
+          </label>
+          <label>
+            <span class="muted">Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span class="muted">Message</span>
+            <textarea name="message" placeholder="Tell me about your project…" required></textarea>
+          </label>
+          <button class="cta" type="submit">Send message</button>
+          <div id="ok" class="success">Thanks! I’ll get back to you within 24h.</div>
+          <p class="muted" style="font-size:12px;margin:6px 0 0">This form uses <a href="https://formspree.io/" target="_blank" rel="noreferrer">Formspree</a>. Replace the endpoint in <code>script</code> with yours, or use the mail link below.</p>
+        </form>
+        <div class="card">
+          <h3 style="margin-top:0">Prefer email?</h3>
+          <p class="muted">Reach me directly:
+            <br><a class="btn" href="mailto:abhishekkaliraman009@gmail.com">abhishekkaliraman009@gmail.com</a>
+          </p>
+          <div class="socials">
+            <a class="btn" href="#" aria-label="X">X</a>
+            <a class="btn" href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a class="btn" href="#" aria-label="GitHub">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container footer">
+      <span>© <span id="year"></span> Abhishek Kaliraman • Architect AI</span>
+      <a class="muted" href="#top">Back to top ↑</a>
+    </footer>
+  </main>
+
+  <script>
+    // Update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple Formspree POST (replace with your endpoint)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form));
+      try {
+        const r = await fetch('https://formspree.io/f/your-id-here', {
+          method:'POST', headers:{'Accept':'application/json'}, body: new FormData(form)
+        });
+        if (r.ok) {
+          document.getElementById('ok').style.display = 'block';
+          form.reset();
+        } else {
+          window.location.href = 'mailto:abhishekkaliraman009@gmail.com?subject=Portfolio%20Contact&body=' + encodeURIComponent(`${data.name} (${data.email})\n\n${data.message}`);
+        }
+      } catch(err){
+        window.location.href = 'mailto:abhishekkaliraman009@gmail.com?subject=Portfolio%20Contact&body=' + encodeURIComponent(`${data.name} (${data.email})\n\n${data.message}`);
+      }
+    });
+  </script>
+</body>
+</html>
 
